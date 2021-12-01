@@ -1,0 +1,305 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    /* var(--pallet_1); */
+    --pallet_1: #47C143;
+    /* var(--pallet_2); */
+    --pallet_2: #92cbf0;
+    /* var(--pallet_3); */
+    --pallet_3: #237FDB;
+    /* var(--pallet_4); */
+    --pallet_4: #85BDEE;
+}
+
+
+body{
+    background-color:  rgb(253, 251, 251);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 3px;
+    font-size: 101%;
+    line-height: 120%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#cabecalho{
+    top: 0px;
+    background-color: var(--pallet_1);;
+    position: fixed;
+    width: 100%;
+    padding: 2%;
+}
+
+#titulo{
+    color: white;
+    margin-left: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.artigos_post{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 10%;
+    padding: 2%;
+    border-radius: 15px;
+    height: 300px;
+    background-color: #31b0ce;
+    transition: .3s;
+}
+
+.artigos_post, #licoes_aprendidas,
+#licoes_a_aprender, #passagem_trybe,
+#artigos_lado_a_lado, table{
+    transition: .3s;
+}
+
+.artigos_post:hover, #licoes_aprendidas:hover,
+#licoes_a_aprender:hover, #passagem_trybe:hover,
+#artigos_lado_a_lado:hover, table:hover{
+    transition: .3s;
+    box-shadow: 0px 0px 9px 1px rgb(6, 8, 8);
+}
+
+h1, h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#top_section{
+    width: 38%;
+    float: right; 
+}
+
+#artigo_300{
+    width: 50%;
+    display: inline-block;
+    column-count: 2;
+    text-align: justify;
+    column-rule: 3px solid #62ce31;
+    column-gap: 50px;
+}
+
+#minha_foto{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;   
+}
+
+.divisoria{
+    border: 1px solid #62ce31;
+    margin-top: 3%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#minecraft{
+    background: url(minecraft.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 3%;
+    margin-top: 3%;
+    backdrop-filter: blur(5px);
+    
+}
+
+#licoes_aprendidas, #licoes_a_aprender{
+    /* background-color: #9d31ce; */
+    width: 25%;
+    border-radius: 15px;
+    border: 2px solid rgb(151, 146, 146);
+    /* background: url(free-isometric-ipads-showcase-mockup-1.jpg) center; */
+    display: inline-block;
+    height: 100px;
+    background-size: cover;
+    margin-top: 2.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 5%;
+    column-count: 2;
+    text-align: center;
+}
+
+/* 
+gerei o box-shadow nesse site aqui...
+
+https://www.cssmatic.com/box-shadow
+
+porque fazer box-shadow manualmente é igual
+decorar as cores RGB, simplesmente perda de tempo.
+*/
+#sidebar_navegation{
+    margin-top: 2.5%;
+    margin-right: 5%;
+    -webkit-box-shadow: -9px 10px 6px -1px rgba(0, 0, 0, 0.911);
+    -moz-box-shadow: -9px 10px 6px -1px rgba(0, 0, 0, 0.911);
+    box-shadow: -9px 10px 6px -1px rgba(0, 0, 0, 0.911);
+    width: 25.5%;
+    border-radius: 15px;
+    margin-left: 5%;
+    float: right;
+    animation-name: shadow_aside;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* 
+eu entendo completamente o código da animação, mas dificilmente
+me lembro de como se faz de cabeça; então, por via das dúvidas, essa
+aqui é a referência...
+
+https://www.w3schools.com/css/css3_animations.asp
+*/
+
+@keyframes shadow_aside{
+    0%  {box-shadow: -10px 10px 6px -1px rgba(31, 82, 33, 0.836); margin-right: 5%;margin-top: 2.5%;}
+    25% {box-shadow: -20px 20px 6px -1px rgba(21, 54, 77, 0.74); margin-right: 4.5%;margin-top: 3%;}
+    50% {box-shadow: -10px 10px 6px -1px rgba(104, 24, 104, 0.774); margin-right: 5%;margin-top: 2.5%;}
+    75% {box-shadow: -20px 20px 6px -1px rgba(107, 107, 28, 0.74); margin-right: 4.5%;margin-top: 3%;}
+    100%{box-shadow: -10px 10px 6px -1px rgba(31, 82, 33, 0.836); margin-right: 5%;margin-top: 2.5%;}
+}
+
+.nav_items{
+    background-color: green;
+    width: 97%;
+    padding: 1.5%;
+    text-align: center;
+    height: 150px;
+}
+
+.title_sidebar{
+    color: white;
+    font-size: 1.8em;
+    margin-top: 18%;
+    text-shadow: -1px -1px 2px rgb(180, 8, 8);
+    background-color: #15b2cc94;
+}
+
+.nav_items:nth-child(1){
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 0px;
+    background: url(fez-gomez-platform-game-cub.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.nav_items:nth-last-child(2){
+    margin-top: 0px;
+    background: url(1*hKxLqbEDEhSYn5wpc0LTZA.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.nav_items:nth-last-child(1){
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 0px;
+    background: url(space-invaders-forever.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.nav_items{
+    transition: .5s;
+}
+.nav_items:hover{
+    transition: .5s;
+    background-size: 130% 130%;
+    cursor: pointer;
+}
+
+table, td, tr, th{
+    border: 2px solid black;
+    padding: 4.2%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: red;
+    text-align: center;
+    width: 56%;
+}
+
+#passagem_trybe{
+    float: right;
+    margin-top: 3%;
+    margin-right: 5%;
+    background-color: var(--pallet_3);
+    width: 23%;
+    padding: 1.5%;
+    border-radius: 15px;
+    margin-left: 5%;
+}
+
+#artigos_lado_a_lado{
+    width: 54%;
+    display: flex;
+    background-color: var(--pallet_4);
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 15px;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+#artigos_lado_a_lado article{
+    text-align: justify;
+    width: 40%;
+    padding-left: 6.5%;
+}
+
+/* #meme{
+    width: 56%;
+    height: 371px;
+    background-image: url(willSmithBoladao.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 58% 100%;
+    background-position: 10% 10px;
+    margin-top: 3%;
+    border-radius: 15px;
+    margin-left: 5%;
+} */
+
+#rodape{
+    background-color: green;
+    height: 150px;
+    margin-top: 5%;
+}
+
+.social_media_footer{
+    width: 90px;
+    height: 90px;
+    margin-left: 10%;
+    border-radius: 15px;
+    margin-top: 2.5%;
+    background-color: red;
+    transition: .2s;
+}
+
+.social_media_footer:hover{
+    box-shadow: 0px 0px 10px 8px #18b0c4;
+    transition: .2s;
+    scale: 1.1;
+}
+
+
+
+#cabecalho{background-color: var(--pallet_1);}
+.artigos_post{background-color: var(--pallet_3);}
+#artigo_300{column-rule: 3px solid var(--pallet_4);}
+.divisoria{border: 1px solid var(--pallet_2);}
+#licoes_aprendidas, #licoes_a_aprender{background-color: var(--pallet_2);}
+/* esse elemeto de baixo não vai aparecer porque tem items por cima dele*/
+/* #sidebar_navegation{background-color: red;} */
+.nav_items{background-color: var(--pallet_1);}
+table{background-color: var(--pallet_1);}
+#rodape{background-color: var(--pallet_3);}
+.social_media_footer{background-color: var(--pallet_4);}
